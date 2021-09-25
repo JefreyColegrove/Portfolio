@@ -1,0 +1,64 @@
+:root {
+    --darkcolor: rgb(28,0,41);
+    --lightcolor1: rgb(132,101,219);
+    --lightcolor2: rgb(22, 86, 223);
+    --h1Color: rgb(119, 0, 255);
+    --lightshadow: rgba(83, 83, 83, 0.678);
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--lightcolor1)
+}
+body {
+    background-color: var(--darkcolor);
+    color: var(--lightcolor1);
+    height: 100vh;
+}
+header {
+    width: 100%;
+    background-color: var(--lightshadow);
+}
+nav {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    bottom: 18px;
+    margin: 0 10px 0 10px;
+}
+nav a {
+    margin: 0 10px 0 10px;
+
+}
+h1 {
+    color: var(--h1Color);
+    font-size: 50px;
+    font-family: cursive;
+}
+h2 {
+    color: var(--lightcolor2)
+}
+.cards {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+.card-image {
+    background: var(--darkcolor);
+    position: relative;
+    flex: 1;
+    max-width: 460px;
+    height: 300px;
+    margin: 20px;
+    opacity: .8;
+    position: relative;
+    vertical-align: top;
+    transition: .6s;
+    transition-property: opacity;
+}
+.card-image:hover{
+    opacity: 1;
+}
